@@ -1,0 +1,53 @@
+{
+  "title": "(Global) WindowsみたいにAlt(Option)でMenubarにアクセス",
+  "rules": [
+    {
+      "description": "Command-B to Menubar -> B",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2",
+              "modifiers": [ "control" ]
+            },
+            { "key_code": "b" },
+            { "key_code": "down_arrow" }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Command-H to Menubar -> H",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "f2",
+              "modifiers": [ "control" ]
+            },
+            { "key_code": "h" },
+            { "key_code": "down_arrow" }
+          ]
+        }
+      ]
+    }
+  ]
+}
